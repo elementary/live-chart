@@ -1,0 +1,36 @@
+Source: livechart
+Section: libs
+Priority: optional
+Maintainer: elementary, Inc. <builds@elementary.io>
+Build-Depends: debhelper (>= 10.5.1),
+               libgee-0.8-dev,
+               libglib2.0-dev (>= 2.50),
+               libgtk-3-dev (>= 3.22),
+               valac,
+               meson
+Standards-Version: 4.5.0
+Vcs-Git: https://github.com/lcallarec/live-chart.git
+Vcs-Browser: https://github.com/lcallarec/live-chart
+Homepage: https://github.com/lcallarec/live-chart
+
+Package: liblivechart1
+Architecture: any
+Depends: ${misc:Depends},
+         ${shlibs:Depends}
+Description: real-time charting library
+ Live Chart is a real-time charting library for GTK3 and Vala, based on Cairo.
+ .
+ This package contains the shared library.
+
+Package: liblivechart-1-dev
+Section: libdevel
+Architecture: any
+Depends: libgee-0.8-dev,
+         libglib2.0-dev (>= 2.50),
+         libgtk-3-dev (>= 3.22),
+         liblivechart1 (= ${binary:Version}),
+         ${misc:Depends},
+Description: real-time charting library
+ Live Chart is a real-time charting library for GTK3 and Vala, based on Cairo.
+ .
+ This package contains the static library and header files.
