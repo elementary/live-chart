@@ -1,6 +1,11 @@
 name: CI
 
-on: [push, pull_request]
+on:
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - synchronize
 
 jobs:
   build:
@@ -18,7 +23,7 @@ jobs:
       - name: Install Dependencies
         run: |
           apt update
-          apt install -y install valac libgee-0.8-dev libgtk-4-dev libcairo-dev xvfb at-spi2-core
+          apt install -y at-spi2-core libcairo-dev libgee-0.8-dev libgtk-4-dev meson valac xvfb
       - name: Build
         env:
           DESTDIR: out
