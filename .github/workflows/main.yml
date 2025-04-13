@@ -29,8 +29,7 @@ jobs:
           DESTDIR: out
           PKG_CONFIG_PATH: ${{ github.workspace }}/build/meson-uninstalled
         run: |
-          meson build
-          ninja -C build -Ddebug=true -Db_coverage=true
+          meson setup build -Ddebug=true -Db_coverage=true
           ninja -C build install
       - name: Run tests
         run: |
