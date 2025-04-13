@@ -19,11 +19,11 @@ jobs:
       image: ghcr.io/elementary/docker:${{ matrix.version }}
 
     steps:
-      - uses: actions/checkout@v2
-      - name: Install deps
+      - uses: actions/checkout@v4
+      - name: Install Dependencies
         run: |
-          sudo apt-get update
-          sudo apt-get install meson valac libgee-0.8-dev libgtk-4-dev libcairo-dev python3 xvfb at-spi2-core
+          apt update
+          apt install -y meson valac libgee-0.8-dev libgtk-4-dev libcairo-dev python3 xvfb at-spi2-core
       - name: Set up Python
         uses: actions/setup-python@v1
       - name: Install Python dependencies
