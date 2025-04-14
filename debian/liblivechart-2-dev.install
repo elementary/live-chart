@@ -1,0 +1,4 @@
+usr/include/livechart-2.h
+usr/lib/*/liblivechart-2.so
+usr/lib/*/pkgconfig/*
+usr/share/vala/vapi/*
