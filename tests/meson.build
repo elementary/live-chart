@@ -1,3 +1,8 @@
+add_test_setup(
+    'headless',
+    exe_wrapper: [find_program('xvfb-run'), '--auto-servernum', '--server-num=1'],
+    is_default: true
+)
 
 test_sources = files(
     'area.vala',
