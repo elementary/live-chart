@@ -8,7 +8,7 @@ Build-Depends: debhelper (>= 10.5.1),
                libgtk-3-dev (>= 3.22),
                valac,
                meson,
-               xvfb-run
+               xvfb
 Standards-Version: 4.5.0
 Vcs-Git: https://github.com/elementary/live-chart.git
 Vcs-Browser: https://github.com/elementary/live-chart
