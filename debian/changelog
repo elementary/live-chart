@@ -1,5 +1,5 @@
-livechart2 (1.9.1) noble; urgency=low
+livechart2 (2.0.0) noble; urgency=medium
 
-  * Initial release.
+  * New upstream release
 
- -- Ryo Nakano <ryonakaknock3@gmail.com>  Tue, 11 Mar 2025 21:33:13 +0900
+ -- Danielle Foré <danielle@elementary.io>  Tue, 15 Apr 2025 15:35:47 -0700
