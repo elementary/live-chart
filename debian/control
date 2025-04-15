@@ -9,9 +9,9 @@ Build-Depends: debhelper (>= 10.5.1),
                valac,
                meson
 Standards-Version: 4.5.0
-Vcs-Git: https://github.com/lcallarec/live-chart.git
-Vcs-Browser: https://github.com/lcallarec/live-chart
-Homepage: https://github.com/lcallarec/live-chart
+Vcs-Git: https://github.com/elementary/live-chart.git
+Vcs-Browser: https://github.com/elementary/live-chart
+Homepage: https://github.com/elementary/live-chart
 
 Package: liblivechart1
 Architecture: any
