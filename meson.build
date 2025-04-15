@@ -1,7 +1,7 @@
 project(
     'livechart-2',
     ['vala', 'c'],
-    version: '1.10.0'
+    version: '2.0.0'
 )
 
 cc = meson.get_compiler('c')
