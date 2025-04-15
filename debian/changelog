@@ -3,3 +3,9 @@ livechart2 (2.0.0) noble; urgency=medium
   * New upstream release
 
  -- Danielle Foré <danielle@elementary.io>  Tue, 15 Apr 2025 15:35:47 -0700
+
+livechart (1.9.1) noble; urgency=low
+
+  * Initial release.
+
+ -- Ryo Nakano <ryonakaknock3@gmail.com>  Tue, 11 Mar 2025 21:33:13 +0900
