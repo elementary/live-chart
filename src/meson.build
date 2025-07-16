@@ -48,7 +48,7 @@ livechart_static_lib = static_library('livechart_static', [sources], dependencie
 livechart_static_dep = declare_dependency(include_directories: include_directories('.'), link_with: livechart_static_lib)
 
 livechart_lib = library(
-    'livechart',
+    meson.project_name(),
     [sources],
     dependencies: deps,
     vala_args: vala_args,
@@ -62,8 +62,8 @@ pkg.generate(
     version: meson.project_version(),
     libraries: livechart_lib,
     description: 'Live-chart headers',
-    name: 'livechart',
-    filebase: 'livechart'
+    name: meson.project_name(),
+    filebase: meson.project_name()
 )
 
 livechart_dep = declare_dependency(
